@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Medulla>
+  <Doctype>Spec</Doctype>
+  <Checksum></Checksum>
+  <DriverKey>NA</DriverKey>
+  <SpecId>NA</SpecId>
+  <TransactionId>0</TransactionId>
+  <AccountID>Nanosonics</AccountID>
+  <SpecName>Flux_Capacitor</SpecName>
+  <WorkflowStep>WF_FC</WorkflowStep>
+  <SerialNumber></SerialNumber>
+  <BatchNumber></BatchNumber>
+  <Status></Status>
+  <Comment></Comment>
+  <FirstFail></FirstFail>
+  <Employee></Employee>
+  <LocalMachine></LocalMachine>
+  <ResourceKey></ResourceKey>
+  <Date></Date>
+  <Time></Time>
+  <Duration></Duration>
+  <DUTPosition />
+  <Components></Components>
+  <Attributes></Attributes>
+  <Tests>
+    <Test>
+      <Code>1.0</Code>
+      <Name>Capacitors</Name>
+      <Description>Test Capacitor Values</Description>
+      <Group></Group>
+      <IsGroup>Yes</IsGroup>
+      <Tag>Capacitors</Tag>
+      <Method></Method>
+      <Parameter />
+      <DataType></DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo></LimitLo>
+      <LimitHi></LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat></DisplayFormat>
+      <Units></Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>1.1</Code>
+      <Name>Discharge_C108_C109</Name>
+      <Description>Discharge the large Caps</Description>
+      <Group>Capacitors</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Capacitors:Discharge_C108_C109</Tag>
+      <Method>Discharge_C108_C109</Method>
+      <Parameter>{
+    "Switch":"Discharge_C108_C109",
+    "Wait (msec)":1000
+}</Parameter>
+      <DataType>Boolean</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo></LimitLo>
+      <LimitHi></LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch>1</BooleanMatch>
+      <DisplayFormat></DisplayFormat>
+      <Units></Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>1.2</Code>
+      <Name>Connect_LCR</Name>
+      <Description>Connect the LCR Meter</Description>
+      <Group>Capacitors</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Capacitors:Connect_LCR</Tag>
+      <Method>Route_Switch</Method>
+      <Parameter>{
+    "Switch":"Connect_LCR",
+    "State":true,
+    "Wait (msec)":1000
+}</Parameter>
+      <DataType>Boolean</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo></LimitLo>
+      <LimitHi></LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch>1</BooleanMatch>
+      <DisplayFormat></DisplayFormat>
+      <Units></Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>1.3</Code>
+      <Name>C108_C109</Name>
+      <Description>Measure C108 and C109</Description>
+      <Group>Capacitors</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Capacitors:C108_C109</Tag>
+      <Method>Measure_Cap</Method>
+      <Parameter>{
+    "Switch":"C108_C109",
+    "Wait (msec)":1000,
+    "LCR":{
+        "F_(Hz)":35.0000000000000,
+        "Range":"Auto",
+        "Signal_Level":"1Vrms",
+        "Function":"Cp-Q",
+        "Meas_Speed":"Slow"
+    },
+    "Scale":1000000.00000000
+}</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>1100</LimitLo>
+      <LimitHi>1300</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.1f</DisplayFormat>
+      <Units> uF</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>1.4</Code>
+      <Name>C153</Name>
+      <Description>Measure C153</Description>
+      <Group>Capacitors</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Capacitors:C153</Tag>
+      <Method>Measure_Cap</Method>
+      <Parameter>{
+    "Switch":"C153",
+    "Wait (msec)":1000,
+    "LCR":{
+        "F_(Hz)":35.0000000000000,
+        "Range":"Auto",
+        "Signal_Level":"1Vrms",
+        "Function":"Cp-Q",
+        "Meas_Speed":"Slow"
+    },
+    "Scale":1000000.00000000
+}</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>1100</LimitLo>
+      <LimitHi>1300</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.1f</DisplayFormat>
+      <Units> uF</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>1.5</Code>
+      <Name>Disconnect_LCR</Name>
+      <Description>Disconnect the LCR Meter</Description>
+      <Group>Capacitors</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Capacitors:Disconnect_LCR</Tag>
+      <Method>Route_Switch</Method>
+      <Parameter>{
+    "Switch":"Connect_LCR",
+    "State":false,
+    "Wait (msec)":500
+}</Parameter>
+      <DataType>Boolean</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo></LimitLo>
+      <LimitHi></LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch>1</BooleanMatch>
+      <DisplayFormat></DisplayFormat>
+      <Units></Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>2.0</Code>
+      <Name>Resistors</Name>
+      <Description>Test Resistor Values</Description>
+      <Group></Group>
+      <IsGroup>Yes</IsGroup>
+      <Tag>Resistors</Tag>
+      <Method></Method>
+      <Parameter />
+      <DataType></DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo></LimitLo>
+      <LimitHi></LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat></DisplayFormat>
+      <Units></Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>2.1</Code>
+      <Name>24VDC_To_Gnd</Name>
+      <Description>Measure 24VDC to Gnd</Description>
+      <Group>Resistors</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Resistors:24VDC_To_Gnd</Tag>
+      <Method>Measure_Resistor</Method>
+      <Parameter>{
+    "Switch":"24V_to_Gnd",
+    "Wait (msec)":1000,
+    "Scale":1,
+    "DMM_4W_Ohms":{
+        "Range":"100 MOhm",
+        "Resolution":"4 1/2"
+    }
+}</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>900</LimitLo>
+      <LimitHi>1100</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.1f</DisplayFormat>
+      <Units> Ohm</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>2.2</Code>
+      <Name>R121</Name>
+      <Description>Measure R121</Description>
+      <Group>Resistors</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Resistors:R121</Tag>
+      <Method>Measure_Resistor</Method>
+      <Parameter>{
+    "Switch":"R121",
+    "Wait (msec)":1000,
+    "Scale":1,
+    "DMM_4W_Ohms":{
+        "Range":"1 MOhm",
+        "Resolution":"4 1/2"
+    }
+}</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>900</LimitLo>
+      <LimitHi>1100</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.1f</DisplayFormat>
+      <Units> Ohm</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>2.3</Code>
+      <Name>LUG</Name>
+      <Description>Measure LUG</Description>
+      <Group>Resistors</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Resistors:LUG</Tag>
+      <Method>Measure_Resistor</Method>
+      <Parameter>{
+    "Switch":"LUG",
+    "Wait (msec)":1000,
+    "Scale":1,
+    "DMM_4W_Ohms":{
+        "Range":"100 Ohm",
+        "Resolution":"4 1/2"
+    }
+}</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>900</LimitLo>
+      <LimitHi>1100</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.1f</DisplayFormat>
+      <Units> Ohm</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>2.4</Code>
+      <Name>R304</Name>
+      <Description>Measure R304</Description>
+      <Group>Resistors</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Resistors:R304</Tag>
+      <Method>Measure_Resistor</Method>
+      <Parameter>{
+    "Switch":"R304",
+    "Wait (msec)":1000,
+    "Scale":1,
+    "DMM_4W_Ohms":{
+        "Range":"100 Ohm",
+        "Resolution":"4 1/2"
+    }
+}</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>900</LimitLo>
+      <LimitHi>1100</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.1f</DisplayFormat>
+      <Units> Ohm</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>2.5</Code>
+      <Name>R203</Name>
+      <Description>Measure R203</Description>
+      <Group>Resistors</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Resistors:R203</Tag>
+      <Method>Measure_Resistor</Method>
+      <Parameter>{
+    "Switch":"R203",
+    "Wait (msec)":1000,
+    "Scale":1,
+    "DMM_4W_Ohms":{
+        "Range":"1 kOhm",
+        "Resolution":"4 1/2"
+    }
+}</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>900</LimitLo>
+      <LimitHi>1100</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.1f</DisplayFormat>
+      <Units> Ohm</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>3.0</Code>
+      <Name>Diodes</Name>
+      <Description>Test Diode Values</Description>
+      <Group></Group>
+      <IsGroup>Yes</IsGroup>
+      <Tag>Diodes</Tag>
+      <Method></Method>
+      <Parameter />
+      <DataType></DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo></LimitLo>
+      <LimitHi></LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat></DisplayFormat>
+      <Units></Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>3.1</Code>
+      <Name>D1200</Name>
+      <Description>Measure D1200</Description>
+      <Group>Diodes</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Diodes:D1200</Tag>
+      <Method>Measure_Diode</Method>
+      <Parameter>{
+    "Switch":"D1200",
+    "Wait (msec)":1000,
+    "Scale":1,
+    "PSU":{
+        "Chan":1,
+        "V":3.3
+    },
+    "DMM_DCV":{
+        "Range ":"10 V",
+        "Resolution":"4 1/2"
+    }
+}</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>23</LimitLo>
+      <LimitHi>25</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.1f</DisplayFormat>
+      <Units> V</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>4.0</Code>
+      <Name>Processor</Name>
+      <Description>Clock Tests</Description>
+      <Group></Group>
+      <IsGroup>Yes</IsGroup>
+      <Tag>Processor</Tag>
+      <Method></Method>
+      <Parameter />
+      <DataType></DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo></LimitLo>
+      <LimitHi></LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat></DisplayFormat>
+      <Units></Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>4.1</Code>
+      <Name>Clock_Freq</Name>
+      <Description>Measure clock frequency</Description>
+      <Group>Processor</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Processor:Clock_Freq</Tag>
+      <Method>Measure_Freq</Method>
+      <Parameter></Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>127</LimitLo>
+      <LimitHi>128</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.1f</DisplayFormat>
+      <Units>MHz</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>4.2</Code>
+      <Name>Program</Name>
+      <Description>Program DUT</Description>
+      <Group>Processor</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Processor:Program</Tag>
+      <Method>Program_Device</Method>
+      <Parameter></Parameter>
+      <DataType>Boolean</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo></LimitLo>
+      <LimitHi></LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch>1</BooleanMatch>
+      <DisplayFormat></DisplayFormat>
+      <Units></Units>
+      <TestTime></TestTime>
+    </Test>
+  </Tests>
+</Medulla>

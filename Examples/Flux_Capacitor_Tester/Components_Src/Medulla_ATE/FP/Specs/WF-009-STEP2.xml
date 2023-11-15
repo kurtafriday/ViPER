@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Medulla>
+  <Doctype>Result</Doctype>
+  <Checksum>Spec</Checksum>
+  <DriverKey>abc123</DriverKey>
+  <SpecId>0002</SpecId>
+  <TransactionId>0</TransactionId>
+  <AccountID>Medulla</AccountID>
+  <SpecName>Thingamybob Final Test</SpecName>
+  <WorkflowStep>Final Test</WorkflowStep>
+  <SerialNumber></SerialNumber>
+  <BatchNumber></BatchNumber>
+  <Status></Status>
+  <Comment></Comment>
+  <FirstFail></FirstFail>
+  <Employee></Employee>
+  <LocalMachine></LocalMachine>
+  <ResourceKey></ResourceKey>
+  <Date></Date>
+  <Time></Time>
+  <Duration></Duration>
+  <Components></Components>
+  <Attributes></Attributes>
+  <Tests>
+    <Test>
+      <Code>1</Code>
+      <Name>Resistor Tests</Name>
+      <Description>Group of Power Tests</Description>
+      <Group></Group>
+      <IsGroup>Yes</IsGroup>
+      <Tag>Resistor Tests</Tag>
+      <Method></Method>
+      <Parameter />
+      <DataType></DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo></LimitLo>
+      <LimitHi></LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat></DisplayFormat>
+      <Units></Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>1.1</Code>
+      <Name>Test R1</Name>
+      <Description>Test R1 resistance</Description>
+      <Group>Resistor Tests</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Resistor Tests:Test R1</Tag>
+      <Method>MeasR</Method>
+      <Parameter>1</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>1010</LimitLo>
+      <LimitHi>990</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.2f</DisplayFormat>
+      <Units>Ohms</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>1.2</Code>
+      <Name>Test R2</Name>
+      <Description>Test R2 resistance</Description>
+      <Group>Resistor Tests</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Resistor Tests:Test R2</Tag>
+      <Method>MeasR</Method>
+      <Parameter>2</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>1010</LimitLo>
+      <LimitHi>990</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.2f</DisplayFormat>
+      <Units>Ohms</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>1.3</Code>
+      <Name>Test R3</Name>
+      <Description>Test R3 resistance</Description>
+      <Group>Resistor Tests</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Resistor Tests:Test R3</Tag>
+      <Method>MeasR</Method>
+      <Parameter>3</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>1010</LimitLo>
+      <LimitHi>990</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.2f</DisplayFormat>
+      <Units>Ohms</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>1.4</Code>
+      <Name>Test R4</Name>
+      <Description>Test R4 resistance</Description>
+      <Group>Resistor Tests</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Resistor Tests:Test R4</Tag>
+      <Method>MeasR</Method>
+      <Parameter>4</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>1010</LimitLo>
+      <LimitHi>990</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.2f</DisplayFormat>
+      <Units>Ohms</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>1.5</Code>
+      <Name>Test R5</Name>
+      <Description>Test R5 resistance</Description>
+      <Group>Resistor Tests</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Resistor Tests:Test R5</Tag>
+      <Method>MeasR</Method>
+      <Parameter>5</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>1010</LimitLo>
+      <LimitHi>990</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.2f</DisplayFormat>
+      <Units>Ohms</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>2</Code>
+      <Name>Firmware Tests</Name>
+      <Description>Group of Firmware Tests</Description>
+      <Group></Group>
+      <IsGroup>Yes</IsGroup>
+      <Tag>Firmware Tests</Tag>
+      <Method></Method>
+      <Parameter />
+      <DataType></DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo></LimitLo>
+      <LimitHi></LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat></DisplayFormat>
+      <Units></Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>2.1</Code>
+      <Name>Read Status Bit</Name>
+      <Description>Reads the firmare status bit</Description>
+      <Group>Firmware Tests</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Firmware Tests:Read Status Bit</Tag>
+      <Method>ReadStatBit</Method>
+      <Parameter></Parameter>
+      <DataType>Boolean</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo></LimitLo>
+      <LimitHi></LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch>True</BooleanMatch>
+      <DisplayFormat></DisplayFormat>
+      <Units></Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>2.2</Code>
+      <Name>Read Firmware Version</Name>
+      <Description>Reads the FW version</Description>
+      <Group>Firmware Tests</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Firmware Tests:Read Firmware Version</Tag>
+      <Method>ReadFWVersion</Method>
+      <Parameter></Parameter>
+      <DataType>String</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo></LimitLo>
+      <LimitHi></LimitHi>
+      <StringMatch>Ver1.3</StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat></DisplayFormat>
+      <Units></Units>
+      <TestTime></TestTime>
+    </Test>
+  </Tests>
+</Medulla>

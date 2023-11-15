@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Medulla>
+  <Doctype>Result</Doctype>
+  <Checksum>Spec</Checksum>
+  <DriverKey>abc123</DriverKey>
+  <SpecId>0001</SpecId>
+  <TransactionId>0</TransactionId>
+  <AccountID>Medulla</AccountID>
+  <SpecName>Callender Electrical Test</SpecName>
+  <WorkflowStep>ElectricalTest</WorkflowStep>
+  <SerialNumber></SerialNumber>
+  <BatchNumber></BatchNumber>
+  <Status></Status>
+  <Comment></Comment>
+  <FirstFail></FirstFail>
+  <Employee></Employee>
+  <LocalMachine></LocalMachine>
+  <ResourceKey></ResourceKey>
+  <Date></Date>
+  <Time></Time>
+  <Duration></Duration>
+  <Components></Components>
+  <Attributes></Attributes>
+  <Tests>
+    <Test>
+      <Code>1</Code>
+      <Name>Power Tests</Name>
+      <Description>Group of Power Tests</Description>
+      <Group></Group>
+      <IsGroup>Yes</IsGroup>
+      <Tag>Power Tests</Tag>
+      <Method></Method>
+      <Parameter />
+      <DataType></DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo></LimitLo>
+      <LimitHi></LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat></DisplayFormat>
+      <Units></Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>1.1</Code>
+      <Name>Test Vcc to ground</Name>
+      <Description>Test for any shorts to ground</Description>
+      <Group>Power Tests</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Power Tests:Test Vcc to ground</Tag>
+      <Method>Test_Dbl</Method>
+      <Parameter />
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>50</LimitLo>
+      <LimitHi>60</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.1f</DisplayFormat>
+      <Units>Ohms</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>1.2</Code>
+      <Name>Test Vcc Voltage</Name>
+      <Description>Test Vcc Voltage is within limit</Description>
+      <Group>Power Tests</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Power Tests:Test Vcc Voltage</Tag>
+      <Method>Test_Dbl</Method>
+      <Parameter />
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>4.9</LimitLo>
+      <LimitHi>5.1</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.1f</DisplayFormat>
+      <Units>Volts</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>1.3</Code>
+      <Name>Test Vcc Current</Name>
+      <Description>Test Vcc Current is within limit</Description>
+      <Group>Power Tests</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Power Tests:Test Vcc Current</Tag>
+      <Method>Test_Dbl</Method>
+      <Parameter />
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>90</LimitLo>
+      <LimitHi>110</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.1f</DisplayFormat>
+      <Units>mA</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>2</Code>
+      <Name>Electrode Tests</Name>
+      <Description>Group of Electrode Tests</Description>
+      <Group></Group>
+      <IsGroup>Yes</IsGroup>
+      <Tag>Electrode Tests</Tag>
+      <Method></Method>
+      <Parameter />
+      <DataType></DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo></LimitLo>
+      <LimitHi></LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat></DisplayFormat>
+      <Units></Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>2.1</Code>
+      <Name>Electrode Voltage 1</Name>
+      <Description>Tests voltage on E1</Description>
+      <Group>Electrode Tests</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Electrode Tests:Electrode Voltage 1</Tag>
+      <Method>Test_Dbl</Method>
+      <Parameter>E1</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>0.1</LimitLo>
+      <LimitHi>0.2</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.2f</DisplayFormat>
+      <Units>Volts</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>2.2</Code>
+      <Name>Electrode Voltage 2</Name>
+      <Description>Tests voltage on E2</Description>
+      <Group>Electrode Tests</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Electrode Tests:Electrode Voltage 2</Tag>
+      <Method>Test_Dbl</Method>
+      <Parameter>E2</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>0.1</LimitLo>
+      <LimitHi>0.2</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.2f</DisplayFormat>
+      <Units>Volts</Units>
+      <TestTime></TestTime>
+    </Test>
+    <Test>
+      <Code>2.3</Code>
+      <Name>Electrode Voltage 3</Name>
+      <Description>Tests voltage on E3</Description>
+      <Group>Electrode Tests</Group>
+      <IsGroup>No</IsGroup>
+      <Tag>Electrode Tests:Electrode Voltage 3</Tag>
+      <Method>Test_Dbl</Method>
+      <Parameter>E3</Parameter>
+      <DataType>Dbl</DataType>
+      <Value></Value>
+      <Status></Status>
+      <LimitLo>0.1</LimitLo>
+      <LimitHi>0.2</LimitHi>
+      <StringMatch></StringMatch>
+      <BooleanMatch></BooleanMatch>
+      <DisplayFormat>%.2f</DisplayFormat>
+      <Units>Volts</Units>
+      <TestTime></TestTime>
+    </Test>
+  </Tests>
+</Medulla>

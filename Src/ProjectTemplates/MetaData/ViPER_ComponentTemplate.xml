@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Windows-1252" standalone="yes"?>
+<MetaData>
+  <ProjectTemplate>
+    <Title localize="yes">Medulla ViPER Component</Title>
+    <Description localize="yes">Creates a ViPER component that implements Dependency Injection.</Description>
+    <Filters localize="yes">Templates:Desktop</Filters>
+    <Keywords localize="yes">OOP;ViPER</Keywords>
+    <LocationPath>Core\ViPER\Components_Src\Component_Template</LocationPath>
+    <ProjectPath>Component_Template.lvproj</ProjectPath>
+    <ListboxImagePath>images/ViPER_Logo.png</ListboxImagePath>
+    <DocumentationPath></DocumentationPath>
+    <MetaDataClass></MetaDataClass>
+    <CustomVIMode>AfterPage1</CustomVIMode>
+    <CustomVIPath>scripting/ViPER_Dialog.vi</CustomVIPath>
+    <SortPriority>0</SortPriority>
+    <HidePrefix>True</HidePrefix>
+  </ProjectTemplate>
+</MetaData>
